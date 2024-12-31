@@ -1,0 +1,71 @@
+html {
+    background-color: #ffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background: repeating-linear-gradient(
+        45deg,
+        /* Angle of stripes */ #ffcccb,
+        /* First color */ #ffcccb 10px,
+        /* Color stops */ #ffffff 10px,
+        #ffffff 20px
+    );
+}
+
+.maskstart {
+    width: 20%;
+    background: linear-gradient(
+        to right,
+        #ff0000 0%,
+        rgba(0, 0, 0, 0) 100%
+    ) !important;
+}
+
+.maskend {
+    width: 20%;
+    background: linear-gradient(
+        to left,
+        #ff0000 0%,
+        rgba(0, 0, 0, 0) 100%
+    ) !important;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #3a5942;
+    justify-content: center;
+    margin: 10em;
+    border-radius: 20px;
+    text-align: start;
+    padding: 20px;
+}
+
+.boba {
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.imgcont {
+    display: flex;
+    justify-content: center;
+}

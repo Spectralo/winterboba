@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Winter Boba</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="maskstart"></div>
+            <div class="center">
+                <h1>Hi ...</h1>
+                <h1>Sadly christmas is over ...</h1>
+                <h1 id="date">You just need to wait : !!!!</h1>
+                <div class="imgcont">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/9860/9860339.png"
+                        class="boba"
+                    />
+                </div>
+            </div>
+
+            <div class="maskend"></div>
+        </div>
+    </body>
+    <script>
+        let date = new Date("2025-12-25");
+        let now = new Date();
+        let diff = date - now;
+        let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+            (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        document.getElementById("date").innerHTML =
+            "You just need to wait : " +
+            days +
+            "d " +
+            hours +
+            "h " +
+            minutes +
+            "m " +
+            seconds +
+            "s" +
+            " !!!!";
+    </script>
+</html>
